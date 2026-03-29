@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Home Cart</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="top-buttons">
+    <a href="Homepage.html" class="btn">Home</a>
+    <a href="Products.html" class="btn">Back to Products</a>
+    <a href="Checkout.html" class="btn">Checkout</a>
+</div>
+
+<h1 style="text-align:center; margin-top:80px;">Your Cart</h1>
+
+<div class="cart-container">
+    <table id="cartTable">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price ($)</th>
+                <th>Quantity</th>
+                <th>Subtotal ($)</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Cart items injected via JS -->
+        </tbody>
+    </table>
+
+    <div class="cart-summary">
+        <p>Discount: $<span id="discount">0</span></p>
+        <p>Tax (10%): $<span id="tax">0</span></p>
+        <h2>Total: $<span id="total">0</span></h2>
+        <button id="clearCart" class="btn">Clear All</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+    displayCart();
+</script>
+</body>
+</html>
